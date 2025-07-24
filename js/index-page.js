@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 try {
                     window.history.replaceState(
                         { search: keyword }, 
-                        `搜索: ${keyword} - LibreTV`, 
+                        `搜尋: ${keyword} - LibreTV`, 
                         window.location.href
                     );
                 } catch (e) {
-                    console.error('更新浏览器历史失败:', e);
+                    console.error('更新瀏覽器紀錄失敗:', e);
                 }
             }, 300);
         }
@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
                 window.history.replaceState(
                     { search: searchQuery }, 
-                    `搜索: ${searchQuery} - LibreTV`, 
+                    `搜尋: ${searchQuery} - LibreTV`, 
                     `/s=${encodeURIComponent(searchQuery)}`
                 );
             } catch (e) {
-                console.error('更新浏览器历史失败:', e);
+                console.error('更新瀏覽器紀錄失敗:', e);
             }
         }, 300);
     }
